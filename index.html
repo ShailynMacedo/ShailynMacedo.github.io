@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shailyn Macedo — personal website and portfolio.">
+  <title>Shailyn Macedo</title>
+  <style>
+    :root { --bg:#0b1020; --card:#121a2d; --text:#f5f7ff; --muted:#aab3ca; --accent:#8b7cff; --accent2:#4fd1c5; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:linear-gradient(135deg,var(--bg),#15112b); color:var(--text); line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    nav { position:sticky; top:0; z-index:10; backdrop-filter:blur(14px); background:rgba(11,16,32,.75); border-bottom:1px solid rgba(255,255,255,.08); }
+    .nav-inner { max-width:1050px; margin:auto; padding:16px 24px; display:flex; justify-content:space-between; align-items:center; }
+    .brand { font-weight:800; letter-spacing:.3px; }
+    .links { display:flex; gap:22px; color:var(--muted); font-size:.95rem; }
+    .links a:hover { color:var(--text); }
+    main { max-width:1050px; margin:auto; padding:0 24px; }
+    .hero { min-height:78vh; display:grid; place-items:center; padding:80px 0; }
+    .hero-content { max-width:760px; text-align:center; }
+    .eyebrow { color:var(--accent2); font-weight:700; text-transform:uppercase; letter-spacing:2px; font-size:.8rem; }
+    h1 { font-size:clamp(3rem,8vw,6rem); line-height:1; margin:18px 0; letter-spacing:-4px; }
+    .hero p { color:var(--muted); font-size:1.2rem; max-width:650px; margin:0 auto 30px; }
+    .buttons { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+    .button { padding:12px 20px; border-radius:999px; background:var(--accent); color:white; font-weight:700; }
+    .button.secondary { background:transparent; border:1px solid rgba(255,255,255,.18); }
+    section { padding:90px 0; }
+    h2 { font-size:2.2rem; margin:0 0 14px; }
+    .section-intro { color:var(--muted); max-width:650px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin-top:30px; }
+    .card { background:rgba(18,26,45,.8); border:1px solid rgba(255,255,255,.08); border-radius:20px; padding:24px; box-shadow:0 15px 40px rgba(0,0,0,.15); }
+    .card h3 { margin-top:0; }
+    .card p { color:var(--muted); }
+    footer { max-width:1050px; margin:auto; padding:35px 24px 55px; color:var(--muted); border-top:1px solid rgba(255,255,255,.08); }
+    @media (max-width:650px) { .links { gap:10px; font-size:.85rem; } h1 { letter-spacing:-2px; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="#top">Shailyn Macedo</a>
+      <div class="links"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Welcome</div>
+        <h1>Hi, I'm Shailyn.</h1>
+        <p>A simple, modern home for my work, projects, and ideas.</p>
+        <div class="buttons">
+          <a class="button" href="#work">See my work</a>
+          <a class="button secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="section-intro">This is my personal website. I'll use this space to share more about myself, what I'm building, and the things I'm excited about.</p>
+    </section>
+
+    <section id="work">
+      <h2>Featured work</h2>
+      <p class="section-intro">A few places to showcase projects, experiments, or accomplishments.</p>
+      <div class="grid">
+        <article class="card"><h3>Project One</h3><p>Add a short description of your first project here.</p></article>
+        <article class="card"><h3>Project Two</h3><p>Add a short description of your second project here.</p></article>
+        <article class="card"><h3>Project Three</h3><p>Add a short description of your third project here.</p></article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's connect</h2>
+      <p class="section-intro">Want to reach me? Replace the placeholder below with your preferred contact or social link.</p>
+      <div class="buttons" style="justify-content:flex-start;margin-top:24px"><a class="button" href="mailto:hello@example.com">Email me</a></div>
+    </section>
+  </main>
+
+  <footer>© 2026 Shailyn Macedo. Built with HTML and CSS.</footer>
+</body>
+</html>
